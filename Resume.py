@@ -18,7 +18,7 @@ with open("Priyanka's Resume (4).pdf", "rb") as pdf_file:
 
 def open_support_ticket():
     email_link = "https://github.com/agrawal-priyanka"
-    webbrowser.open(email_link)
+    webbrowser.open_new_tab(email_link)
 col1, col2 = st.columns(2, gap="small")
 with col1:
     st.image(image,width=270)
