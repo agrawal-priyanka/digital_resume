@@ -40,7 +40,7 @@ with col2:
                            # </a>''',
                        #unsafe_allow_html=True
                        # )
-        st.button('GitHub',on_click=open_support_ticket):
+        st.button('GitHub',on_click=open_support_ticket)
             #webbrowser.open_new_tab('https://github.com/agrawal-priyanka')
      
     with col4:
