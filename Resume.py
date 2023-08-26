@@ -36,7 +36,7 @@ with col2:
         github_url = "https://github.com/agrawal-priyanka"  # Replace with your GitHub URL
         button_label = "GitHub"
         js_code = f"window.open('{github_url}', '_blank');"
-        st.button(button_label, onclick=js_code)
+        st.button(button_label, on_click=js_code)
 
      
     with col4:
