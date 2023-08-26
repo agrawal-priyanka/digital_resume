@@ -29,8 +29,15 @@ with col2:
         mime="application/octet-stream")
     col3,col4,col5 = col2.columns(3,gap="small")
     with col3:
-        if st.button('GitHub'):
-            webbrowser.open_new_tab('https://github.com/agrawal-priyanka')
+        st.write(<a target="_self" href="{'https://github.com/agrawal-priyanka'">
+                                <button>
+                                    Github
+                                </button>
+                            </a>,
+                       unsafe_allow_html=True
+                        )
+        #if st.button('GitHub'):
+            #webbrowser.open_new_tab('https://github.com/agrawal-priyanka')
      
     with col4:
         if st.button('LinkedIn'):
