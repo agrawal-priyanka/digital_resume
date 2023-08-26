@@ -33,8 +33,9 @@ with col2:
         mime="application/octet-stream")
     col3,col4,col5 = col2.columns(3,gap="small")
     with col3:
-        if st.button("GitHub"):
-            open_github_profile()
+        github_url = "https://github.com/agrawal-priyanka"  # Replace with your GitHub URL
+        st.markdown(f'<a href="{github_url}" target="_blank"><button>GitHub</button></a>', unsafe_allow_html=True)
+
      
     with col4:
         if st.button('LinkedIn'):
