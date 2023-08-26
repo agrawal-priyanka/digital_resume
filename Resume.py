@@ -16,9 +16,9 @@ with open("styles.css") as k:
 with open("Priyanka's Resume (4).pdf", "rb") as pdf_file:
     pdf = pdf_file.read()
 
-def open_support_ticket():
-    email_link = "https://github.com/agrawal-priyanka"
-    webbrowser.open_new_tab(email_link)
+def open_link(link):
+    js_code = f"window.open('{link}', '_blank')"
+    return js_code
 col1, col2 = st.columns(2, gap="small")
 with col1:
     st.image(image,width=270)
@@ -33,15 +33,26 @@ with col2:
         mime="application/octet-stream")
     col3,col4,col5 = col2.columns(3,gap="small")
     with col3:
-        #st.write('''<a target="_blank" href='https://github.com/agrawal-priyanka'>
-                               # <button>
-                                   # Github
-                               # </button>
-                           # </a>''',
-                       #unsafe_allow_html=True
-                       # )
-        st.button('GitHub',on_click=open_support_ticket)
-            #webbrowser.open_new_tab('https://github.com/agrawal-priyanka')
+        if st.button("GitHub"):
+            github_link = "https://github.com/agrawal-priyanka"
+            st.write(
+                     f'''
+                    <style>
+                        .custom-button {{
+                         background-color: #e0e0e0;
+                         border: 1px solid #FF5722;
+                         color: #385653;
+                         text-align: center;
+                         display: inline-block;
+                        }}
+                        .custom-button:hover {{
+                        background-color: #FF5722;
+                        }}
+                    </style>
+                    <button class="custom-button" onclick="{open_link(github_link)}">GitHub</button>
+                    ''',
+                    unsafe_allow_html=True,
+                    )
      
     with col4:
         if st.button('LinkedIn'):
