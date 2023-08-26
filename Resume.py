@@ -29,7 +29,7 @@ with col2:
         mime="application/octet-stream")
     col3,col4,col5 = col2.columns(3,gap="small")
     with col3:
-        st.write(<a target="_self" href="{'https://github.com/agrawal-priyanka'">
+        st.write(<a target="_blank" href='https://github.com/agrawal-priyanka'>
                                 <button>
                                     Github
                                 </button>
