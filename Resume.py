@@ -34,12 +34,12 @@ with col2:
     col3,col4,col5 = col2.columns(3,gap="small")
     with col3:
         #st.write('''<a target="_blank" href='https://github.com/agrawal-priyanka'>
-                                <button>
-                                    Github
-                                </button>
-                            </a>''',
-                       unsafe_allow_html=True
-                        )
+                               # <button>
+                                   # Github
+                               # </button>
+                           # </a>''',
+                       #unsafe_allow_html=True
+                       # )
         st.button('GitHub',on_click=open_support_ticket):
             #webbrowser.open_new_tab('https://github.com/agrawal-priyanka')
      
