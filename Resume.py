@@ -34,7 +34,9 @@ with col2:
     col3,col4,col5 = col2.columns(3,gap="small")
     with col3:
         github_url = "https://github.com/agrawal-priyanka"  # Replace with your GitHub URL
-        st.markdown(f'<a href="{github_url}" target="_blank"><button>GitHub</button></a>', unsafe_allow_html=True)
+        button_label = "GitHub"
+        js_code = f"window.open('{github_url}', '_blank');"
+        st.button(button_label, onclick=js_code)
 
      
     with col4:
