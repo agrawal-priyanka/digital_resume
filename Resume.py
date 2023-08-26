@@ -7,8 +7,8 @@ image = Image.open('profile_photo.png')
 
 st.set_page_config(page_title="Resume | Priyanka Agrawal")
 
-url1 = 'https://github.com/agrawal-priyanka'
-url2= 'https://www.linkedin.com/in/priyanka-agrawal-46640b15a/'
+#url1 = 'https://github.com/agrawal-priyanka'
+#url2= 'https://www.linkedin.com/in/priyanka-agrawal-46640b15a/'
 
 with open("styles.css") as k:
     st.markdown(f"<style>{k.read()}</style>", unsafe_allow_html=True)
@@ -30,11 +30,11 @@ with col2:
     col3,col4,col5 = col2.columns(3,gap="small")
     with col3:
         if st.button('GitHub'):
-            webbrowser.open_new_tab(url1)
+            webbrowser.open_new_tab('https://github.com/agrawal-priyanka')
      
     with col4:
         if st.button('LinkedIn'):
-    	    webbrowser.open_new_tab(url2)
+    	    webbrowser.open_new_tab('https://www.linkedin.com/in/priyanka-agrawal-46640b15a/')
 
     with col5:
         if st.button("📋" '   Gmail'):
