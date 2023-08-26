@@ -1,0 +1,201 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora:wght@400;500&family=Raleway:ital,wght@0,300;0,400;0,500;0,600;0,700;0,900;1,500;1,900&display=swap');
+
+span.css-yss90u.eczjsme5 {
+    color: white;
+}
+
+span.css-okyehm.eczjsme5 {
+    color: white;
+}
+
+button.css-6t0urs.ef3psqc4 {
+    color: white;
+}
+
+button.css-7we8z1.ef3psqc11:hover {
+    background-color: #FF5722;
+    color:#F6EEE0;
+}
+
+button.css-7we8z1.ef3psqc11 {
+    border:1px solid #FF5722;
+    font-family:'Raleway';
+    font-weight:300
+}
+
+
+#priyanka-agrawal {
+    font-family:'Raleway';
+    font-weight:600;
+    font-size:40px;
+}
+
+
+#education {
+    font-family:'Raleway';
+    font-weight:500;
+    font-size:30px;
+    text-decoration: underline;
+    text-underline-offset: 5px;
+    text-decoration-thickness: 2px
+}
+
+#certifications {
+    font-family:'Raleway';
+    font-weight:500;
+    font-size:30px;
+    text-decoration: underline;
+    text-underline-offset: 5px;
+    text-decoration-thickness: 2px
+}
+
+#hard-skills {
+    font-family:'Raleway';
+    font-weight:500;
+    font-size:30px;
+    text-decoration: underline;
+    text-underline-offset: 5px;
+    text-decoration-thickness: 2px
+}
+
+#soft-skills {
+    font-family:'Raleway';
+    font-weight:500;
+    font-size:30px;
+    text-decoration: underline;
+    text-underline-offset: 5px;
+    text-decoration-thickness: 2px
+}
+#internships {
+    font-family:'Raleway';
+    font-weight:500;
+    font-size:30px;
+    text-decoration: underline;
+    text-underline-offset: 5px;
+    text-decoration-thickness: 2px
+}
+
+div.css-15iz2r.e1nzilvr4{
+    font-family:'Lora';
+    font-weight:500;
+    font-color:#000000;
+}
+
+button.btn.add::before {
+  font-family: fontAwesome;
+  content: "\f067\00a0";
+}
+
+#employee-management-system {
+    font-family:'Raleway';
+    font-weight:600;
+    font-size:40px;
+    text-align:center;
+    padding-bottom: 45px;
+}
+
+#aim {
+    font-family:'Raleway';
+    font-weight:500;
+    font-size:30px;
+    text-decoration: underline;
+    text-underline-offset: 5px;
+    text-decoration-thickness: 2px
+}
+#users {
+    font-family:'Raleway';
+    font-weight:500;
+    font-size:30px;
+    text-decoration: underline;
+    text-underline-offset: 5px;
+    text-decoration-thickness: 2px
+}
+
+#features {
+    font-family:'Raleway';
+    font-weight:500;
+    font-size:30px;
+    text-decoration: underline;
+    text-underline-offset: 5px;
+    text-decoration-thickness: 2px
+}
+
+#source-files {
+    font-family:'Raleway';
+    font-weight:500;
+    font-size:30px;
+    text-decoration: underline;
+    text-underline-offset: 5px;
+    text-decoration-thickness: 2px
+}
+#tools-and-packages {
+    font-family:'Raleway';
+    font-weight:500;
+    font-size:30px;
+    text-decoration: underline;
+    text-underline-offset: 5px;
+    text-decoration-thickness: 2px
+}
+
+
+button.css-nydhls.ef3psqc11:hover {
+    background-color: #FF5722;
+    color:#F6EEE0; 
+}
+button.css-nydhls.ef3psqc11 {
+    border:1px solid #FF5722;
+    font-family:'Raleway';
+    font-weight:300
+}
+
+img {
+    text-align: center
+    width:500px;
+}
+
+
+
+#datasets {
+    font-family:'Raleway';
+    font-weight:500;
+    font-size:30px;
+    text-decoration: underline;
+    text-underline-offset: 5px;
+    text-decoration-thickness: 2px
+}
+
+#machine-learning-models {
+    font-family:'Raleway';
+    font-weight:500;
+    font-size:30px;
+    text-decoration: underline;
+    text-underline-offset: 5px;
+    text-decoration-thickness: 2px
+}
+
+#optimization-techiques {
+    font-family:'Raleway';
+    font-weight:500;
+    font-size:30px;
+    text-decoration: underline;
+    text-underline-offset: 5px;
+    text-decoration-thickness: 2px
+}
+
+#results {
+    font-family:'Raleway';
+    font-weight:500;
+    font-size:30px;
+    text-decoration: underline;
+    text-underline-offset: 5px;
+    text-decoration-thickness: 2px
+}
+
+
+#loan-approval-prediction-model {
+    font-family:'Raleway';
+    font-weight:600;
+    font-size:40px;
+    text-align:center;
+    padding-bottom: 45px;
+}
