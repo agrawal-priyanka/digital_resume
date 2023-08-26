@@ -15,6 +15,10 @@ with open("styles.css") as k:
 
 with open("Priyanka's Resume (4).pdf", "rb") as pdf_file:
     pdf = pdf_file.read()
+
+def open_support_ticket():
+    email_link = "https://github.com/agrawal-priyanka"
+    webbrowser.open(email_link)
 col1, col2 = st.columns(2, gap="small")
 with col1:
     st.image(image,width=270)
@@ -29,14 +33,14 @@ with col2:
         mime="application/octet-stream")
     col3,col4,col5 = col2.columns(3,gap="small")
     with col3:
-        st.write('''<a target="_blank" href='https://github.com/agrawal-priyanka'>
+        #st.write('''<a target="_blank" href='https://github.com/agrawal-priyanka'>
                                 <button>
                                     Github
                                 </button>
                             </a>''',
                        unsafe_allow_html=True
                         )
-        #if st.button('GitHub'):
+        st.button('GitHub',on_click=open_support_ticket):
             #webbrowser.open_new_tab('https://github.com/agrawal-priyanka')
      
     with col4:
