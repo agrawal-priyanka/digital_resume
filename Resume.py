@@ -4,6 +4,7 @@ import pyperclip
 from PIL import Image
 from streamlit.components.v1 import html
 import time 
+import clipboard
 
 image = Image.open('profile_photo.png')
 
@@ -42,6 +43,8 @@ def copy_gmail_address(gmail):
     </script>
     """
     html(gmail_copy)
+def copy_to_clipboard(text):
+    clipboard.copy(text)
 
 
 
@@ -67,9 +70,7 @@ with col2:
     	st.button('LinkedIn', on_click=open_page,key='widget2', args=('https://www.linkedin.com/in/priyanka-agrawal-46640b15a/',))
 
     with col5:
-        gmail_address = "priyanka76.pa@gmail.com"
-        st.markdown(copy_gmail_address(gmail_address), unsafe_allow_html=True)
-        if st.button("📋" '   Gmail', on_click=f"copyToClipboard_{gmail_address}();",key=gmail_address):
+        if st.button("📋" '   Gmail', on_click=copy_to_clipboard, args=("priyanka76.pa@gmail.com",)):
             alert = st.success("Copied to Clipboard")
             time.sleep(1)
             alert.empty()
