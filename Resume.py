@@ -69,7 +69,7 @@ with col2:
     with col5:
         gmail_address = "priyanka76.pa@gmail.com"
         st.markdown(copy_gmail_address(gmail_address), unsafe_allow_html=True)
-        if st.button("📋" '   Gmail', on_click=f"copyToClipboard_{gmail_address}();",key='copy_text',args=('priyanka76.pa@gmail.com',)):
+        if st.button("📋" '   Gmail', on_click=f"copyToClipboard_{gmail_address}();",key=gmail_address):
             alert = st.success("Copied to Clipboard")
             time.sleep(1)
             alert.empty()
