@@ -34,8 +34,10 @@ with col2:
         mime="application/octet-stream")
     col3,col4,col5 = col2.columns(3,gap="small")
     with col3:
-
-        st.button(button_label, on_click=js_code)
+        github_url = "https://github.com/agrawal-priyanka"  # Replace with your GitHub URL
+        button_label = "GitHub"
+        link_html = f'<a href="{github_url}" target="_blank"><button>{button_label}</button></a>'
+        st.markdown(link_html, unsafe_allow_html=True)
 
      
     with col4:
