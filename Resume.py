@@ -51,7 +51,9 @@ with col2:
     	st.button('LinkedIn', on_click=open_page,key='widget2', args=('https://www.linkedin.com/in/priyanka-agrawal-46640b15a/',))
 
     with col5:
-        st.button('Gmail', on_click=open_page,key='widget3', args=("priyanka76.pa@gmail.com",))
+        if st.button('Gmail'):
+            st.write("priyanka76.pa@gmail.com")
+        
 
     
 
