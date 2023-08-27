@@ -3,6 +3,7 @@ import webbrowser
 import pyperclip
 from PIL import Image
 from streamlit.components.v1 import html
+import time 
 
 image = Image.open('profile_photo.png')
 
@@ -67,7 +68,9 @@ with col2:
 
     with col5:
         if st.button("📋" '   Gmail', on_click=copy_gmail_address,key='copy_text', args=('priyanka76.pa@gmail.com',)):
-            success = st.success("Copied to Clipboard")
+            alert = st.success("Copied to Clipboard")
+            time.sleep(3)
+            alert.empty()
 
     
 
