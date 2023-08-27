@@ -69,7 +69,7 @@ with col2:
     with col5:
         if st.button("📋" '   Gmail', on_click=copy_gmail_address,key='copy_text', args=('priyanka76.pa@gmail.com',)):
             alert = st.success("Copied to Clipboard")
-            time.sleep(3)
+            time.sleep(1)
             alert.empty()
 
     
