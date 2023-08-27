@@ -36,6 +36,7 @@ def copy_gmail_address(gmail):
             dummy.select();
             document.execCommand("copy");
             document.body.removeChild(dummy);
+            st.write("Copied to clipboard: {gmail}");
         }}
     </script>
     """
