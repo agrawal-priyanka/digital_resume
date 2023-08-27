@@ -16,8 +16,9 @@ with open("styles.css") as k:
 with open("Priyanka's Resume (4).pdf", "rb") as pdf_file:
     pdf = pdf_file.read()
 
-def open_github_profile():
-    st.markdown("[GitHub](https://github.com/agrawal-priyanka)", unsafe_allow_html=True)
+github_url = "https://github.com/agrawal-priyanka"  # Replace with your GitHub URL
+button_label = "GitHub"
+js_code = f"window.open('{github_url}', '_blank');"
     
 col1, col2 = st.columns(2, gap="small")
 with col1:
@@ -33,9 +34,7 @@ with col2:
         mime="application/octet-stream")
     col3,col4,col5 = col2.columns(3,gap="small")
     with col3:
-        github_url = "https://github.com/agrawal-priyanka"  # Replace with your GitHub URL
-        button_label = "GitHub"
-        js_code = f"window.open('{github_url}', '_blank');"
+
         st.button(button_label, on_click=js_code)
 
      
