@@ -26,20 +26,20 @@ def open_page(url):
     """ % (url)
     html(open_script)
 
-    def copy_gmail_address(gmail):
-        gmail_copy = f"""
-        <script>
-            function copyToClipboard_{gmail}() {{
-                var dummy = document.createElement("textarea");
-                document.body.appendChild(dummy);
-                dummy.value = "{gmail}";
-                dummy.select();
-                document.execCommand("copy");
-                document.body.removeChild(dummy);
-            }}
-        </script>
-        """
-        html(gmail_copy)
+def copy_gmail_address(gmail):
+    gmail_copy = f"""
+    <script>
+        function copyToClipboard_{gmail}() {{
+            var dummy = document.createElement("textarea");
+            document.body.appendChild(dummy);
+            dummy.value = "{gmail}";
+            dummy.select();
+            document.execCommand("copy");
+            document.body.removeChild(dummy);
+        }}
+    </script>
+    """
+    html(gmail_copy)
 
 
 
