@@ -1,8 +1,6 @@
 import streamlit as st
 from PIL import Image
 from streamlit.components.v1 import html
-import time 
-import clipboard
 
 image = Image.open('profile_photo.png')
 
