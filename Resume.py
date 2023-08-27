@@ -16,9 +16,13 @@ with open("styles.css") as k:
 with open("Priyanka's Resume (4).pdf", "rb") as pdf_file:
     pdf = pdf_file.read()
 
-github_url = "https://github.com/agrawal-priyanka"  # Replace with your GitHub URL
-button_label = "GitHub"
-js_code = f"window.open('{github_url}', '_blank');"
+def open_page(url):
+    open_script= """
+        <script type="text/javascript">
+            window.open('%s', '_blank').focus();
+        </script>
+    """ % (url)
+    html(open_script)
     
 col1, col2 = st.columns(2, gap="small")
 with col1:
@@ -34,12 +38,7 @@ with col2:
         mime="application/octet-stream")
     col3,col4,col5 = col2.columns(3,gap="small")
     with col3:
-        github_url = "https://github.com/agrawal-priyanka"  # Replace with your GitHub URL
-        button_label = "GitHub"
-        link_html = f'<a href="{github_url}" target="_blank" class="streamlit-button">{button_label}</a>'
-    
-        st.markdown(f'<style>.streamlit-button{{text-decoration: none; padding: 6px 12px; background-color:"#e0e0e0";width: 104px;font-size: 16px; color: white;border:1px solid #FF5722; border-radius: 4px;}}</style>', unsafe_allow_html=True)
-        st.markdown(link_html, unsafe_allow_html=True)
+        st.button('Open link', on_click=open_page, args=('https://github.com/agrawal-priyanka',))
 
      
     with col4:
