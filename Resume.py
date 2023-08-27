@@ -25,6 +25,24 @@ def open_page(url):
         </script>
     """ % (url)
     html(open_script)
+
+    def copy_gmail_address(gmail):
+        gmail_copy = f"""
+        <script>
+            function copyToClipboard_{gmail}() {{
+                var dummy = document.createElement("textarea");
+                document.body.appendChild(dummy);
+                dummy.value = "{gmail}";
+                dummy.select();
+                document.execCommand("copy");
+                document.body.removeChild(dummy);
+            }}
+        </script>
+        """
+         html(gmail_copy)
+
+
+
     
 col1, col2 = st.columns(2, gap="small")
 with col1:
@@ -47,8 +65,8 @@ with col2:
     	st.button('LinkedIn', on_click=open_page,key='widget2', args=('https://www.linkedin.com/in/priyanka-agrawal-46640b15a/',))
 
     with col5:
-        if st.button("📋" '   Gmail'):
-            pyperclip.copy('priyanka76.pa@gmail.com')
+        st.button("📋" '   Gmail', on_click=copy_gmail_address,key='copy_text', args=('priyanka76.pa@gmail.com',))
+
     
 
 
