@@ -17,13 +17,6 @@ with open("styles.css") as k:
 with open("Priyanka's Resume (4).pdf", "rb") as pdf_file:
     pdf = pdf_file.read()
 
-def open_page1(url):
-    open_script= """
-        <script type="text/javascript">
-            window.open('%s', '_blank').focus();
-        </script>
-    """ % (url)
-    html(open_script)
 
 def open_page(url):
     open_script= """
@@ -47,12 +40,12 @@ with col2:
         mime="application/octet-stream")
     col3,col4,col5 = col2.columns(3,gap="small")
     with col3:
-        st.button('GitHub', on_click=open_page, args=('https://github.com/agrawal-priyanka',))
+        st.button('GitHub', on_click=open_page,key='widget1', args=('https://github.com/agrawal-priyanka',))
 
      
     with col4:
         if st.button('LinkedIn'):
-    	    st.button('LinkedIn', on_click=open_page1, args=('https://www.linkedin.com/in/priyanka-agrawal-46640b15a/',))
+    	    st.button('LinkedIn', on_click=open_page,key='widget2' args=('https://www.linkedin.com/in/priyanka-agrawal-46640b15a/',))
 
     with col5:
         if st.button("📋" '   Gmail'):
