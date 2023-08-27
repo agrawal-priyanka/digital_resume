@@ -39,7 +39,7 @@ def open_page(url):
             }}
         </script>
         """
-         html(gmail_copy)
+        html(gmail_copy)
 
 
 
