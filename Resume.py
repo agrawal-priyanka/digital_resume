@@ -50,7 +50,10 @@ with col2:
 
     with col5:
         if st.button('Gmail'):
-            st.write("priyanka76.pa@gmail.com")
+            display = st.success("priyanka76.pa@gmail.com")
+            time.sleep(8) # Wait for 3 seconds
+            display.empty()
+            
         
 
     
