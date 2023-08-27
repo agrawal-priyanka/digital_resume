@@ -2,6 +2,7 @@ import streamlit as st
 import webbrowser
 import pyperclip
 from PIL import Image
+from streamlit.components.v1 import html
 
 image = Image.open('profile_photo.png')
 
