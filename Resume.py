@@ -44,7 +44,7 @@ with col2:
      
     with col4:
         if st.button('LinkedIn'):
-    	    webbrowser.open_new_tab('https://www.linkedin.com/in/priyanka-agrawal-46640b15a/')
+    	    st.button('LinkedIn', on_click=open_page, args=('https://www.linkedin.com/in/priyanka-agrawal-46640b15a/',))
 
     with col5:
         if st.button("📋" '   Gmail'):
