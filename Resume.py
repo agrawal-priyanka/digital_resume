@@ -1,7 +1,6 @@
 import streamlit as st
 from PIL import Image
 from streamlit.components.v1 import html
-import time
 image = Image.open('profile_photo.png')
 
 st.set_page_config(page_title="Resume | Priyanka Agrawal")
@@ -50,9 +49,7 @@ with col2:
 
     with col5:
         if st.button('Gmail'):
-            display = st.success("priyanka76.pa@gmail.com")
-            time.sleep(8) # Wait for 3 seconds
-            display.empty()
+            st.write("priyanka76.pa@gmail.com")
             
         
 
