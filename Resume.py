@@ -36,7 +36,9 @@ with col2:
     with col3:
         github_url = "https://github.com/agrawal-priyanka"  # Replace with your GitHub URL
         button_label = "GitHub"
-        link_html = f'<a class="streamlit-button" href="{github_url}" target="_blank">{button_label}</a>'
+        link_html = f'<a href="{github_url}" target="_blank" class="streamlit-button">{button_label}</a>'
+    
+        st.markdown(f'<style>.streamlit-button{{text-decoration: none; padding: 6px 12px; background-color:"#e0e0e0";width: 104px;font-size: 16px; color: white;border:1px solid #FF5722; border-radius: 4px;}}</style>', unsafe_allow_html=True)
         st.markdown(link_html, unsafe_allow_html=True)
 
      
