@@ -39,7 +39,7 @@ with col2:
         mime="application/octet-stream")
     col3,col4,col5 = col2.columns(3,gap="small")
     with col3:
-        st.button('Open link', on_click=open_page, args=('https://github.com/agrawal-priyanka',))
+        st.button('GitHub', on_click=open_page, args=('https://github.com/agrawal-priyanka',))
 
      
     with col4:
