@@ -67,6 +67,7 @@ with col2:
 
     with col5:
         st.button("📋" '   Gmail', on_click=copy_gmail_address,key='copy_text', args=('priyanka76.pa@gmail.com',))
+        st.write("Copied to clipboard")
 
     
 
