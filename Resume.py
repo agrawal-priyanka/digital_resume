@@ -26,23 +26,6 @@ def open_page(url):
     """ % (url)
     html(open_script)
 
-def copy_gmail_address(gmail):
-    gmail_copy = f"""
-    <script>
-        function copyToClipboard_{gmail}() {{
-            var dummy = document.createElement("textarea");
-            document.body.appendChild(dummy);
-            dummy.value = "{gmail}";
-            dummy.select();
-            document.execCommand("copy");
-            document.body.removeChild(dummy);
-            st.write("Copied to clipboard: {gmail}");
-        }}
-    </script>
-    """
-    html(gmail_copy)
-def copy_to_clipboard(text):
-    clipboard.copy(text)
 
 
 
@@ -68,10 +51,7 @@ with col2:
     	st.button('LinkedIn', on_click=open_page,key='widget2', args=('https://www.linkedin.com/in/priyanka-agrawal-46640b15a/',))
 
     with col5:
-        if st.button("📋" '   Gmail', on_click=copy_to_clipboard, args=("priyanka76.pa@gmail.com",)):
-            alert = st.success("Copied to Clipboard")
-            time.sleep(1)
-            alert.empty()
+        st.button('Gmail', on_click=open_page,key='widget3', args=("priyanka76.pa@gmail.com",))
 
     
 
