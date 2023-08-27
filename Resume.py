@@ -1,7 +1,7 @@
 import streamlit as st
 from PIL import Image
 from streamlit.components.v1 import html
-
+import time
 image = Image.open('profile_photo.png')
 
 st.set_page_config(page_title="Resume | Priyanka Agrawal")
