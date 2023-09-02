@@ -1,5 +1,8 @@
 import streamlit as st
 
+with open("styles.css") as k:
+    st.markdown(f"<style>{k.read()}</style>", unsafe_allow_html=True)
+
 st.header("Power BI")
 
 
